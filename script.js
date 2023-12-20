@@ -88,7 +88,7 @@ function updateChart(event) {
             updateChartData(myChart, response);
         },
         error: function(xhr, status, error) {
-            console.log('Response Data:', response.data);
+            console.log('Erreur:', error);
         }
     });
 }
