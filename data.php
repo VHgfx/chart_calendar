@@ -61,20 +61,6 @@ function calculateNb($counts){
     $nb_echecs_cnaps = $counts[10];
     $nb_echecs_projet = $counts[16];
 
-    /*return [
-        "Candidats Contactés" => intval($nb_candidats_contactes),
-        "Entretiens Réalisés" => intval($nb_entretiens_realises),
-        "Prérequis" => intval($nb_candidats_prerequis),
-        "Demandes en Cours" => intval($nb_demandes_cnaps),
-        "Autorisation CNAPS" => intval($nb_candidats_cnaps),
-        "Attente Formation" => intval($nb_candidats_attente_formation),
-        "Entrés en Formation" => intval($nb_candidats_entres_formation),
-        "Échec Test" => intval($nb_echecs_test),
-        "Refusé Entretien" => intval($nb_echecs_entretien),
-        "Refusé CNAPS" => intval($nb_echecs_cnaps),
-        "Demandes en Cours" => intval($nb_echecs_projet)
-    ];*/
-
     $result = [
         "Candidats contactés" => intval($nb_candidats_contactes),
         "Entretiens réalisés" => intval($nb_entretiens_realises),
@@ -98,7 +84,5 @@ function calculateNb($counts){
 }
 
 $result = calculateNb($counts);
-
-//$resultSearch = ['data' => $result];
 
 echo json_encode($result);
