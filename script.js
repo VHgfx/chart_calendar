@@ -113,5 +113,3 @@ toastr.options = {
     showMethod: 'slideDown',
     timeOut: 4000
 };
-
-// Probleme : Plus d'update apres coup, verifier fonction UpdateChart
